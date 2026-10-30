@@ -1,4 +1,3 @@
-# Baseline6_HFC.py（完全修复版 - 通道对齐 Standard_UNet）
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
