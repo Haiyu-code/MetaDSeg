@@ -1,1 +1,13 @@
- Code Availability: The source code of the proposed MetaDSeg framework is currently under repository preparation. Upon acceptance of this manuscript, the complete codebase, including pre-trained models and evaluation scripts, will be made publicly available on GitHub
+1.Run `meta_train_v2.py` first to train the original model and generate the source-domain checkpoint.
+
+python meta_train_v2.py
+
+2. Perform Domain Adaptation
+
+After the checkpoint is generated, run `adapt_v2.py` for domain adaptation.
+
+python adapt_v2.py
+
+3.End test
+
+python test_polyp_metrics_all_v3.py
