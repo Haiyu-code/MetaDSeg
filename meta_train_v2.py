@@ -1,14 +1,3 @@
-# meta_train_v2.py
-# MetaHFC3：Warm-Start 版本  ——  v2.1 修订
-#
-# 相比 v2.0 的改动：
-#   1. skip 阈值放宽：gain < -0.05 才跳过（原 < 0.02），
-#      消除内镜域因 gain≈0 被大量跳过的问题
-#   2. 内循环 lr 按域差异化：
-#      Kvasir/ClinicDB（预训练相关域）使用 lr_inner×0.2=2e-4
-#      ISIC/REFUGE（跨模态域）使用 lr_inner=1e-3
-#   3. 外循环 lr 提高：1e-4 → 2e-4，加速跨域特征学习
-#   4. 默认从 ep500 续跑
 
 import copy
 import random
